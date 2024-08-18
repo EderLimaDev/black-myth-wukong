@@ -14,7 +14,6 @@ body {
 header {
     width: 100%;
     height: 131px;
-    /* background-color: rgba(255, 255,255,0.3); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +28,7 @@ header div button {
     height: 68px;
     border: none;
     border-radius: 12px;
-    background-color: #8C6C58;
+    background-color: #d09c5d;
     color: #fff;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -37,6 +36,10 @@ header div button {
     box-shadow: 5px 7px 25px #000000;
     cursor: pointer;
 }
+header div button:hover {
+    background-color: rgba(208, 156, 93, 0.8);
+}
+
 header picture img {
     width: 250px;
 }
@@ -63,7 +66,7 @@ header picture img {
     font-size: 6rem;
 }
 .main-text p {
-    color: yellow;
+    color: #d09c5d;
 }
 
 .card-images {
@@ -72,7 +75,7 @@ header picture img {
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: #8C6C58;
+    background-color: #d09c5d;
     border-radius: 0 50px 0 0;
     padding: 30px;
 }
@@ -89,7 +92,8 @@ aside {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:#8C6C58;
+    background-color: rgba(208, 156, 93, 0.7);
+    border: 3px solid #fff;
     position: absolute;
     right: -150px;
     top: 200px;
@@ -104,12 +108,19 @@ aside ul {
     gap: 30px;
     
 }
-aside ul li {
-    width: 70px;
-    cursor: pointer;
+aside ul li a svg {
+    width: 100px;
+    height: 60px;
 }
-aside ul li img{
-    width: 100%;
+
+aside ul li a .icon-playstation:hover path {
+   fill: #07428F;
+}
+aside ul li a .icon-epic:hover path {
+    fill: #000000;
+}
+aside ul li a .icon-steam:hover path {
+    fill: rgba(42,71,94,1);
 }
 .open {
     right:0;
